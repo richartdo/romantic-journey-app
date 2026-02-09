@@ -28,7 +28,7 @@ const HeroSection = ({ onStart }: HeroSectionProps) => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.8 }}
-          className="font-display text-6xl sm:text-8xl text-gradient mb-6"
+          className="font-display text-5xl sm:text-8xl text-gradient mb-6"
         >
           Hey Love ❤️
         </motion.h1>
@@ -58,7 +58,7 @@ const HeroSection = ({ onStart }: HeroSectionProps) => {
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
           onClick={onStart}
-          className="glow-button text-lg pulse-glow"
+          className="glow-button text-base sm:text-lg w-full sm:w-auto px-6 py-3 sm:px-8 sm:py-4 pulse-glow"
         >
           Tap to Begin the Journey ✨
         </motion.button>

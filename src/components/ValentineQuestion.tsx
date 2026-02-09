@@ -57,7 +57,7 @@ const ValentineQuestion = () => {
               transition={{ duration: 1 }}
             >
               <motion.h2
-                className="font-display text-5xl sm:text-7xl text-gradient mb-12"
+                className="font-display text-4xl sm:text-7xl text-gradient mb-12"
                 animate={{ scale: [1, 1.02, 1] }}
                 transition={{ repeat: Infinity, duration: 3 }}
               >
@@ -69,7 +69,7 @@ const ValentineQuestion = () => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={handleYes}
-                  className="glow-button text-xl px-12 py-5"
+                  className="glow-button text-base sm:text-xl w-full sm:w-auto px-8 py-4 sm:px-12 sm:py-5"
                 >
                   Yes ❤️
                 </motion.button>
@@ -77,7 +77,7 @@ const ValentineQuestion = () => {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={handleYes}
-                  className="glow-button text-xl px-12 py-5"
+                  className="glow-button text-base sm:text-xl w-full sm:w-auto px-8 py-4 sm:px-12 sm:py-5"
                 >
                   Definitely Yes 💕
                 </motion.button>
@@ -92,16 +92,16 @@ const ValentineQuestion = () => {
               className="space-y-6"
             >
               <motion.div
-                className="text-8xl mb-8"
+                className="text-6xl sm:text-8xl mb-8"
                 animate={{ rotate: [0, 10, -10, 0], scale: [1, 1.2, 1] }}
                 transition={{ repeat: Infinity, duration: 2 }}
               >
                 💖
               </motion.div>
-              <h2 className="font-display text-5xl sm:text-7xl text-gradient">
+              <h2 className="font-display text-4xl sm:text-7xl text-gradient">
                 You just made me the happiest person alive
               </h2>
-              <p className="font-heading italic text-xl text-muted-foreground mt-6">
+              <p className="font-heading italic text-base sm:text-xl text-muted-foreground mt-6">
                 I promise to make every day special for you ✨
               </p>
             </motion.div>

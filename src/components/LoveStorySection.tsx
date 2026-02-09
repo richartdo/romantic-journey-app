@@ -26,7 +26,7 @@ const LoveStorySection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="font-display text-5xl sm:text-6xl text-center text-gradient mb-20"
+        className="font-display text-4xl sm:text-6xl text-center text-gradient mb-20"
       >
         Our Story
       </motion.h2>

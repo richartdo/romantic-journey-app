@@ -17,7 +17,7 @@ const MemoryGallery = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="font-display text-5xl sm:text-6xl text-center text-gradient mb-6"
+        className="font-display text-4xl sm:text-6xl text-center text-gradient mb-6"
       >
         Our Memories
       </motion.h2>
@@ -27,7 +27,7 @@ const MemoryGallery = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.3 }}
-        className="text-center font-heading italic text-muted-foreground text-lg mb-16"
+        className="text-center font-heading italic text-muted-foreground text-base sm:text-lg mb-16"
       >
         "Every memory with you is my favorite."
       </motion.p>

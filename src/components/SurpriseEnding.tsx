@@ -11,7 +11,7 @@ const SurpriseEnding = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="font-display text-5xl sm:text-7xl text-gradient"
+          className="font-display text-4xl sm:text-7xl text-gradient"
         >
           Happy Valentine's, My Love ❤️
         </motion.h2>
@@ -21,7 +21,7 @@ const SurpriseEnding = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="font-heading italic text-xl sm:text-2xl text-foreground/70"
+          className="font-heading italic text-base sm:text-2xl text-foreground/70"
         >
           Forever grateful for you ✨
         </motion.p>
@@ -36,7 +36,7 @@ const SurpriseEnding = () => {
           <p className="font-body text-sm text-muted-foreground tracking-widest uppercase mb-2">
             With all my love
           </p>
-          <p className="font-display text-4xl text-gradient">
+          <p className="font-display text-3xl sm:text-4xl text-gradient">
             Yours Forever 💕
           </p>
         </motion.div>
