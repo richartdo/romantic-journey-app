@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { toast } from "@/components/ui/sonner";
 
 const ValentineQuestion = () => {
   const [answered, setAnswered] = useState(false);
@@ -33,6 +34,15 @@ const ValentineQuestion = () => {
   const handleYes = () => {
     setAnswered(true);
     createConfetti();
+  };
+
+  const handleDefinitelyYes = () => {
+    handleYes();
+    const message = "Yes I will be your valentine";
+    const phone = "254795594142";
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank", "noopener,noreferrer");
+    toast("Go back to the website 😊");
   };
 
   return (
@@ -76,7 +86,7 @@ const ValentineQuestion = () => {
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  onClick={handleYes}
+                  onClick={handleDefinitelyYes}
                   className="glow-button text-base sm:text-xl w-full sm:w-auto px-8 py-4 sm:px-12 sm:py-5"
                 >
                   Definitely Yes 💕
